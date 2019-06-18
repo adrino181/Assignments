@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	   <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width , initial-scale=1">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	   <link rel="stylesheet" href="style.css" >
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	   <script type="text/javascript" src="style.js"></script>
+	   <title>SwitchMe</title>
+</head>
+<body>
+<!---------------------------------------------------------------------------------------------------------------------->	
+	<div class="jumbotron mb-0 p-0">
+		<nav class="navbar navbar-expand-md navbar-light my-0 py-0">
+	  <div class="container-fluid nav-content md-px-5 sm-px-0">
+			   <a class="navbar-brand font-weight-light text-light" href="#"><b>SWITCHME</b></a>
+		  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="text-light"><i class="fa fa-bars" aria-hidden="true"></i>
+</span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+		    <ul class="navbar-nav">
+		      <li class="nav-item active">
+		        <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link text-light" href="#">Ads</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          About
+		        </a>
+		        <div class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item text-dark" href="#">Action</a>
+		          <a class="dropdown-item text-dark" href="#">Another action</a>
+		          <a class="dropdown-item text-dark" href="#">Something else here</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link text-light" href="#">Blog</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link text-light" href="#">Contact</a>
+		      </li>
+		      <form class="form-inline ml-lg-5 ml-md-0 ml-sm-0">
+ 				  <button class="btn btn-sm text-light mx-lg-5 mx-md-2 mx-sm-0" style="border-radius:0; background:none; border-left:1px solid white; " type="button">Log In</button>
+  				  <button class="btn btn-sm btn-primary" type="button">Register</button>
+ 			 </form>
+		    </ul>
+		  </div>
+	  </div>
+	</nav>
+	<div class="container">
+		<div class="container somethingtocenter justify-content-center">
+			<div class="heading-div">
+				<p>
+					<h1 class="text-light text-center">Welcome To SwitchMe</h1>
+				</p>
+				<p class="text-light text-center">
+					Following text is smaller than the above heading
+				</p>
+				<form class="form-inline rounded" style="background: rgba(252, 255, 255, 0.8);">
+					<label class="sr-only" for="inlineFormInputName2">What are you looking for?</label>
+					  <input type="text" class="form-control m-3 topinpt" id="inlineFormInputName2" placeholder="What are you looking for?">
+
+					  
+					  <div class="input-group m-3">
+					  	<label class="sr-only" for="inlineFormInputGroupUsername2">Location</label>
+					    <input type="text" class="form-control topinpt" id="inlineFormInputGroupUsername2" placeholder="Location">
+					  	<span class="spantopinpt">
+					     <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+					    </span>
+					  </div>
+					  <div class="input-group m-3">
+					     <label class="sr-only" for="inlineFormCustomSelect">Preference</label>
+					      <select class="custom-select" id="inlineFormCustomSelect">
+					        <option selected>All Categories</option>
+					        <option value="1">One</option>
+					        <option value="2">Two</option>
+					        <option value="3">Three</option>
+					      </select>
+					    </div>  
+					  <button type="submit" class="btn submit-btn btn-primary  px-lg-4 m-3">Search</button>
+				</form>
+				<div class="mt-3">
+					<span class="text-light mb-2">Trending Search: </span>
+					<div class="btn-group btn-group-sm mt-sm-0" style="" role="group">
+						<button type="button" style="background: rgba(252, 255, 252, 0.30);" class="btn rounded btn-outline-light ml-md-2 ml-lg-2 ml-sm-0">Small</button>
+						<button type="button" style="background: rgba(252, 255, 252, 0.30);" class="btn rounded btn-outline-light ml-2">Small</button>
+						<button type="button" style="background: rgba(252, 255, 252, 0.30);" class="btn rounded btn-outline-light ml-2">Small</button>
+						<button type="button" style="background: rgba(252, 255, 252, 0.30);" class="btn rounded btn-outline-light ml-2">Small</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	   </div>
+	</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+	<div class="p-5 bg-light justify-content-center">
+	  <p>Featured Ads</p>
+	  <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+        <div class="mycarousel carousel-inner row w-100 mx-auto" role="listbox">
+            <div class="carousel-item col-md-3 active">
+				 <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="assets/3.jpg" alt="Card image cap">
+				  <div class="card-body">
+				  	<p class="row justify-content-between"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+				  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				  	</p>
+				    <a href="#" class="card-link">Wooden Chair & Table</a>
+				    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+				    <p><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    </p>
+				  </div>
+				</div>
+            </div>
+            <div class="carousel-item col-md-3">
+                <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="assets/1.jpg" alt="Card image cap">
+				  <div class="card-body">
+				  	<p class="row justify-content-between"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+				  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				  	</p>
+				    <a href="#" class="card-link">Wooden Chair & Table</a>
+				    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+				    <p><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    </p>
+				  </div>
+				</div>
+            </div>
+            <div class="carousel-item col-md-3">
+               <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="assets/4.jpg" alt="Card image cap">
+				  <div class="card-body">
+				  	<p class="row justify-content-between"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+				  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				  	</p>
+				    <a href="#" class="card-link">Wooden Chair & Table</a>
+				    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+				    <p><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    </p>
+				  </div>
+				</div>
+            </div>
+            <div class="carousel-item col-md-3">
+                <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="assets/2.jpg" alt="Card image cap">
+				  <div class="card-body">
+				  	<p class="row justify-content-between"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+				  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				  	</p>
+				    <a href="#" class="card-link">Wooden Chair & Table</a>
+				    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+				    <p><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    </p>
+				  </div>
+				</div>
+            </div>
+            <div class="carousel-item col-md-3">
+                <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="assets/3.jpg" alt="Card image cap">
+				  <div class="card-body">
+				  	<p class="row justify-content-between"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+				  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+				  	</p>
+				    <a href="#" class="card-link">Wooden Chair & Table</a>
+				    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+				    <p><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				    </p>
+				  </div>
+				</div>
+            </div>
+    
+        </div>
+       	<div class="text-center mt-4">
+       		 <a class="mr-4" href="#carouselExample" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left fa-lg text-muted"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="ml-4" href="#carouselExample" role="button" data-slide="next">
+            <i class="fa fa-chevron-right fa-lg text-muted"></i>
+            <span class="sr-only">Next</span>
+        </a>
+   		</div>
+      </div>	
+	</div>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<div class="row text-center mt-5 justify-content-center">
+		<div class="col-md-8">
+		<p><h2 class="text-primary">Popular Categories</h2></p>
+		<p class="text-muted">Loren ipsum Dolor Sit Armet</p>
+		<hr style="width:6rem; border:0; border-top:4px solid #007bff;">
+		<div class="row">
+			<div class="col-sm-12 col-md-2 my-5">
+				<span><i class="fa fa-car text-primary fa-4x"  aria-hidden="true"></i></span>
+				<p class="mb-0 mt-2 text-muted">Cars & Vehicles</p>
+				<button style="border-radius:15px;" type="button" class="text-dark btn bg-muted btn-sm mt-0 px-3" disabled><b>1892</b></button>
+			</div>
+			<div class="col-sm-12 col-md-2 my-5">
+				<span><i class="fa fa-book text-primary fa-4x"  aria-hidden="true"></i></span>
+				<p class="mb-0 mt-2 text-muted">Books & Magazines</p>
+				<button style="border-radius:15px;" type="button" class="text-dark btn bg-muted btn-sm mt-0 px-3" disabled><b>3292</b></button>
+			</div>
+			<div class="col-sm-12 col-md-2 my-5">
+				<span><i class="fa fa-bed text-primary fa-4x"  aria-hidden="true"></i></span>
+				<p class="mb-0 mt-2 text-muted">Furniture</p>
+				<button style="border-radius:15px;" type="button" class="text-dark btn bg-muted btn-sm mt-0 px-3" disabled><b>192</b></button>
+			</div>
+			<div class="col-sm-12 col-md-2 my-5">
+				<span><i class="fa fa-home text-primary fa-4x"  aria-hidden="true"></i></span>
+				<p class="mb-0 mt-2 text-muted">Real Estate</p>
+				<button style="border-radius:15px;" type="button" class="text-dark btn bg-muted btn-sm mt-0 px-3" disabled><b>4852</b></button>
+			</div>
+			<div class="col-sm-12 col-md-2 my-5">
+				<span><i class="fa fa-mobile text-primary fa-4x"  aria-hidden="true"></i></span>
+				<p class="mb-0 mt-2 text-muted">Electronics</p>
+				<button style="border-radius:15px;" type="button" class="text-dark btn bg-muted btn-sm mt-0 px-3" disabled><b>2092</b></button>
+			</div>
+			<div class="col-sm-12 col-md-2 my-5">
+				<span><i class="fa fa-cutlery text-primary fa-4x"  aria-hidden="true"></i></span>
+				<p class="mb-0 mt-2 text-muted">Other</p>
+				<button style="border-radius:15px;" type="button" class="text-dark btn bg-muted btn-sm mt-0 px-3" disabled><b>182</b></button>
+			</div>
+		</div>	
+		</div>
+	  </div>
+  <!--------------------------------------************************************************************************************------------------------***********************************************************************************************************--------------------------------------------------------------------------------------------------------------------->
+  		<div class="mycard-container bg-light" >
+  			<p class="ml-5"><h2 class="text-primary">Trending Today</h2>
+			<hr style="width:6rem; border:0; border-top:4px solid #007bff; text-align:left;margin-left:0"></p>
+			<div class="row justify-content-center">
+				<div class="card col-md-5 mr-4 mb-3">
+				 <div class="row">
+				  <div class="col-md-6 px-0">
+				  <img class="card-img fillimg" src="assets/2.jpg" alt="Card image cap">
+				  </div>
+					  <div class="col-md-6">
+						  <div class="card-body p-0">
+						  	<p class="row justify-content-between px-2 mt-3"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+						  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+						  	</p>
+						    <a href="#" class="card-link">Wooden Chair & Table</a>
+						    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+						    <p class=""><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+						    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+						    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+						    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+						    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+						    </p>
+						  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="card col-md-5 mr-4 mb-3">
+				 <div class="row">
+				  <div class="col-md-6 px-0">
+				  <img class="card-img fillimg" src="assets/1.jpg" alt="Card image cap">
+				  </div>
+					  <div class="col-md-6">
+					  <div class="card-body p-0">
+					  	<p class="row justify-content-between px-2 mt-3"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+					  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+					  	</p>
+					    <a href="#" class="card-link">Wooden Chair & Table</a>
+					    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+					    <p><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    </p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="card col-md-5 mr-4 mb-3">
+				 <div class="row">
+				  <div class="col-md-6 px-0">
+				  <img class="card-img fillimg" src="assets/3.jpg" alt="Card image cap">
+				  </div>
+					  <div class="col-md-6">
+					  <div class="card-body p-0">
+					  	<p class="row justify-content-between px-2 mt-3"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+					  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+					  	</p>
+					    <a href="#" class="card-link">Wooden Chair & Table</a>
+					    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+					    <p><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    </p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="card col-md-5 mr-4 mb-3">
+				 <div class="row">
+				  <div class="col-md-6 px-0">
+				  <img class="card-img fillimg" src="assets/2.jpg" alt="Card image cap">
+				  </div>
+					  <div class="col-md-6">
+					  <div class="card-body p-0">
+					  	<p class="row justify-content-between px-2 mt-3"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+					  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+					  	</p>
+					    <a href="#" class="card-link">Wooden Chair & Table</a>
+					    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+					    <p><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    </p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="card col-md-5 mr-4 mb-3">
+				 <div class="row">
+				  <div class="col-md-6 px-0">
+				  <img class="card-img fillimg" src="assets/4.jpg" alt="Card image cap">
+				  </div>
+					  <div class="col-md-6">
+					  <div class="card-body p-0">
+					  	<p class="row justify-content-between px-2 mt-3"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+					  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+					  	</p>
+					    <a href="#" class="card-link">Wooden Chair & Table</a>
+					    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+					    <p><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    </p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="card col-md-5 mr-4 mb-3">
+				 <div class="row">
+				  <div class="col-md-6 px-0">
+				  <img class="card-img fillimg" src="assets/3.jpg" alt="Card image cap">
+				  </div>
+					  <div class="col-md-6">
+					  <div class="card-body p-0">
+					  	<p class="row justify-content-between px-2 mt-3"><button style="border-radius:15px;" type="button" class="text-dark btn btn-sm bg-muted px-2" disabled>Furniture</button>
+					  		<a class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+					  	</p>
+					    <a href="#" class="card-link">Wooden Chair & Table</a>
+					    <p><small class="text-secondary">Don St. Brooklyn , New York</small></p>
+					    <p><a class="btn mx-0 px-0"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    	<a class="mx-0 px-0 btn"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+					    </p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+<!----*********************************************************************************************************************------------->	
+	 <div class="container p-5">
+	 	<div class="row justify-content-center">
+	 		<div class="col-md-8 col-center m-auto">
+	 			<h2 class="text-primary text-center">Testimonials</h2>
+	 			<hr style="width:6rem; border:0; border-top:4px solid #007bff;">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				   
+				    	<div class="item carousel-item text-center active">
+							<div class="img-box"><img src="assets/5.jpg" alt=""></div>
+							<p class="overview">Will smith</p>
+							<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+						</div>
+				  		<div class="item carousel-item text-center">
+							<div class="img-box"><img src="assets/6.jpg" alt=""></div>
+							<p class="overview">Harem khan</p>
+							<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+						</div>
+				    	<div class="item carousel-item text-center">
+						<div class="img-box"><img src="assets/7.jpg" alt=""></div>
+						<p class="overview">Paula Wilson</p>
+						<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+						</div>
+				  </div>
+				  <a class="carousel-control-prev carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next carousel-control" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+			</div>
+		</div>
+		</div>
+	</div>
+
+<!-----------************************************************************************--------------------------------------------------------->
+<div class="row justify-content-center bg-light">
+<div class="col-md-8 container px-5 mb-4">
+	<div class="my-4">
+	<p class="text-center mb-0"><h2 class="mb-0 text-primary text-center">Our Blog</h2></p>
+	<p class="text-muted text-center mt-0">See Our Daily News & Updates</p>
+	<hr style="width:6rem; border:0; border-top:4px solid #007bff;">
+	</div>
+	<div class="row justify-content-center">
+		<div class="card col-md-4 bg-light" style="border:none;">
+		  <img class="card-img-top" src="assets/1.jpg" alt="Card image cap">
+		  <div class="card-body">
+		  	<h5>Many people Selling Online</h5>
+		  	<p class="bloginfo"><small>by Mark Spiker . Jan 18, 2019 . <a here="#" class="text-primary">News</a></small></p>
+		  	<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus</p>
+		  </div>
+		</div>
+		<div class="card col-md-4 bg-light" style="border:none;">
+		  <img class="card-img-top" src="assets/2.jpg" alt="Card image cap">
+		  <div class="card-body">
+		  	<h5>Many people Selling Online</h5>
+		  	<p class="bloginfo"><small>by Mark Spiker . Jan 18, 2019 . <a here="#" class="text-primary">News</a></small></p>
+		  	<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus</p>
+		  </div>
+		</div>
+		<div class="card col-md-4 bg-light" style="border:none;">
+		  <img class="card-img-top" src="assets/3.jpg" alt="Card image cap">
+		  <div class="card-body">
+		  	<h5>Many people Selling Online</h5>
+		  	<p class="bloginfo"><small>by Mark Spiker . Jan 18, 2019 . <a here="#" class="text-primary">News</a></small></p>
+		  	<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus</p>
+		  </div>
+		</div>
+		</div>
+		<div class="text-center">
+		<button class="btn btn-sm btn-primary px-3">View All Posts</button>
+		</div>
+	</div>
+</div>
+
+<!------------------------------------*******************************************************************------------------------------------------------------------------------------------------>
+<div class="row bg-primary justify-content-center px-5">
+	<div class="row col-md-8 my-4">
+	<div class="col-md-6 m-auto">
+		<p class="mb-0 text-light text-weight-light">Newsletter</p>
+		<p class="mt-0" style="color:#e7dedeb3">Lorem ipsum dolor sit amet color decor</p>
+	</div>
+	<div class="col-md-6 m-auto">
+		<div class="input-group">
+		<input type="text" class="bg-primary subscribe-inpt text-light form-control" placeholder="Email">
+  			<div class="input-group-append">
+    			<button class="btn btn-muted" style="border:none; border-radius:0px;" type="button">Subscribe</button>
+ 	 		</div>
+ 	 	</div>
+	</div>
+  </div>
+</div>
+<!-----------------------------------Footer------------------------------------------------**********************************************************************************************------>
+<div class="footer bg-dark m-0 p-0">
+		<div class="row justify-content-center px-5">
+		<div class="row col-md-8 col-lg-8 mt-5">
+			<div class="col-md-4">
+				<p class="text-light">About</p>
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus</p>
+			</div>
+			<div class="col-md-2">
+				<p class="text-light">Navigation</p>
+				<div>
+				<p class="text-muted">About Us</p>
+				<p class="text-muted">Services</p>
+				<p class="text-muted">Testimonials</p>
+				<p class="text-muted">Contact Us</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<p class="text-light">Follow Us</p>
+				<span>
+					<a class="text-muted mr-4"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a class="text-muted mr-4"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a class="text-muted mr-4"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a class="text-muted mr-4"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</span>
+			</div>
+			<div class="col-md-3">
+				<div class="input-group">
+					<input type="text" class="bg-dark text-light form-control btn-outline-secondary" style="border-radius:0px;" placeholder="Search products...">
+	  			<div class="input-group-append">
+	    			<button class="btn btn-primary" style="border:none; border-radius:0px;" type="button">Search</button>
+	 	 		</div>
+	 	 		</div>
+			</div>
+		</div>
+		</div>
+		<div class="mt-5 row justify-content-center">
+		 	<div class="col-md-8 p-5">
+				 <hr style="border-top:1px solid #6c757d" >
+		 		<p class="text-muted text-center">Copyright © All rights reserved <a class="text-light">SwitchMe</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
