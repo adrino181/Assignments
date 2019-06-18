@@ -1,0 +1,308 @@
+<!Doctype html>
+<html>
+	
+	<head>
+	   <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width , initial-scale=1">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	   <link rel="stylesheet" href="style.css" >
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	   <script src="https://kit.fontawesome.com/076d132043.js"></script>
+	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	   <title>Jai Kisan</title>
+	</head>
+	<body class="bg-light">
+	<div id="mySidenav" class="sidenav text-white" style="background-color: #2a2c2dcf;">
+	  
+	  <a href="" class="spl1">Home</a>
+	  <a href="" class="spl1 active">Dashboard</a>
+	  <a href="" class="spl1">Farmers</a>
+	  <div class="list-group">
+	  	<p>Equipment Finance</p>
+	  	<a href="#" class="spl" >Equipment Enquiries</a>
+	  	<a href="#" class="spl">LMS</a>
+	  	<a href="#" class="spl">Stores</a>
+	  	<a href="#" class="spl">Vendors</a>
+	  	<a href="#" class="spl">Products</a>
+	  	<a href="#" class="spl">Orders</a>
+	  </div>
+	  <div class="list-group">
+	  	<p>Reports</p>
+	  	<a href="#" class="spl">Store Report</a>
+	  </div>
+	</div>
+	<div id="main">
+		<nav class="navbar navbar-fixed-top bg-white p-1 nav-fill mb-3">
+			<div class="container-fluid">
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+				<form class="navbar-form nav-item ml-3" action="/action_page.php">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button class="btn btn-default bg-white" type="submit">
+							<i class="fas fa-search"></i>
+							</button>
+						</div>
+						<input type="text" class="form-control" placeholder="Search" name="search">
+					</div>
+				</form>
+				<div class="navbar-right ml-auto">
+					<a href="form.html" class="nav_a m-2"><i class="fa fa-plus p-1" style="border:2px solid grey; border-radius:50%;" aria-hidden="true"></i></a>
+					<a href="" class="nav_a m-2"><i class="far fa-bell  fa-lg"></i></a>
+					<a href="" class="nav_a m-2"><i class="far fa-question-circle fa-lg"></i></a>
+					<a href="" class="nav_a m-2"><i class="far fa-user fa-lg"></i></a>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid" >
+			<div class="px-md-5 bg-white top_sele_ele">
+					<h4 style="color:#28ab0fdb;">Dashboard</h4>
+					<div class="d-flex row justify-content-between my-3">
+						<div>
+							<small class="text-primary span_ele">Channel<span class="text-secondary"> > Dashboard</span></small>
+						</div>
+						<div class="d-flex flex-wrap mb-2">	
+							<a class="mx-2 px-3 text-secondary py-1 sele_ele"><small>State<i class="fa fa-caret-down ml-4" aria-hidden="true"></i></small></a>
+							
+							<a class="mx-2 px-3 text-secondary py-1 sele_ele"><small>District <i class="fa fa-caret-down ml-4" aria-hidden="true"></i></small></a>
+							
+							<a id="reportrange" class="px-3 text-secondary py-1 sele_ele">
+   								 <i class="fa fa-calendar fa-sm"></i>&nbsp;
+   								 <small><span></span></small>
+   							</a>
+						</div>	
+					</div>
+			</div>
+		</div>
+		<div class="row justify-content-center m-md-4">
+			<div class="col-md-4 mt-2">
+				<div class="card px-md-2">
+				    <div class="card-body">
+				      <div class="d-flex row justify-content-between px-md-2">
+				      	<p class="card-title"><strong>Equipments Sale Amount</strong></p>
+				      	<a href=""><i class='fa fa-ellipsis-v'></i></a>
+				      </div>
+				      <hr>
+				      <h5 class="my_clr"><i class="fas fa-rupee-sign mr-2"></i>5,00,000<h5>
+				    </div>
+				   <img class="card-img-bottom" src="graph.png" alt="Card image cap">
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Equipments Vendor</p>
+				      		<a href="" class="text-secondary"><i class="fa fa-anchor fa-lg" aria-hidden="true"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0">500</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>20%</small></p>
+				      	</div>
+					</div>
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Equipments Sold</p>
+				      		<a href=""><i class="fa fa-anchor text-secondary fa-lg" aria-hidden="true"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0">500</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>20%</small></p>
+				      	</div>
+					</div>
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Farmers</p>
+				      		<a href=""><i class="fa fa-anchor text-secondary fa-lg" aria-hidden="true"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0">500</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>20%</small></p>
+				      	</div>
+					</div>
+  				</div>
+			</div>
+			<div class="col-md-4 mt-2">
+				<div class="card px-md-2 ">
+				    <div class="card-body">
+				      <div class="d-flex row justify-content-between px-md-2">
+				      	<p class="card-title text-secondary"><strong>Agri input Sales Amount</strong></p>
+				      	<a href=""><i class='fa fa-ellipsis-v'></i></a>
+				      </div>
+				      <hr>
+				      <h5 class="my_clr"><i class="fas fa-rupee-sign mr-2"></i>5,00,000<h5>
+				    </div>
+				   <img class="card-img-bottom" src="graph.png" alt="Card image cap">
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Agri input Vendor</p>
+				      		<a href=""><i class="fa fa-anchor text-secondary fa-lg" aria-hidden="true"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0">500</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>20%</small></p>
+				      	</div>
+					</div>
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Agri input United Sold</p>
+				      		<a href=""><i class="fa fa-anchor text-secondary fa-lg" aria-hidden="true"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0">500</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>20%</small></p>
+				      	</div>
+					</div>
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Loan Conversion Rate</p>
+				      		<a href=""><i class="fa fa-anchor text-secondary fa-lg" aria-hidden="true"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0">15%</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>15%</small></p>
+				      	</div>
+					</div>
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Customer Conversion Rate</p>
+				      		<a href=""><i class="fa fa-anchor text-secondary fa-lg" aria-hidden="true"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0">1%</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>5%</small></p>
+				      	</div>
+					</div>
+  				</div>
+				
+			</div>
+
+			<div class="col-md-4 mt-2">
+				<div class="card px-md-2">
+				    <div class="card-body">
+				      <div class="d-flex row justify-content-between px-md-2">
+				      	<p class="card-title"><strong>Total Amount Disbursed</strong></p>
+				      	<a href=""><i class='fa fa-ellipsis-v'></i></a>
+				      </div>
+				      <hr>
+				      <h5 class="my_clr"><i class="fas fa-rupee-sign mr-2"></i>94,50,000<h5>
+				    </div>
+				   <img class="card-img-bottom" src="graph.png" alt="Card image cap">
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Equipments Finance Disbursed</p>
+				      		<a href=""><i class="fas fa-rupee-sign text-secondary fa-lg mr-2"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0"><i class="fas fa-rupee-sign mr-2"></i>87,500</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>20%</small></p>
+				      	</div>
+					</div>
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Booking Amount</p>
+				      		<a href=""><i class="fas fa-rupee-sign text-secondary fa-lg mr-2"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0"><i class="fas fa-rupee-sign mr-2"></i>55,500</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>20%</small></p>
+				      	</div>
+					</div>
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Enquires In Pipline</p>
+				      		<a href=""><i class="fa fa-anchor text-secondary fa-lg" aria-hidden="true"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0">1000</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>15%</small></p>
+				      	</div>
+					</div>
+  				</div>
+  				<div class="card mt-2 px-2">
+  					<div class="card-body">
+  						<div class="d-flex row justify-content-between">
+				      		<p class="card-title text-secondary">Equipment Finance Pipeline</p>
+				      		<a href="" class=""><i class="fa fa-anchor  text-secondary fa-lg" aria-hidden="true"></i></a>
+				      	</div>
+				      	<div class="d-flex row justify-content-between">
+				      		<h5 class="my_clr mb-0">205</h5>
+				      		<p class="mb-0"><i class="fa fa-caret-up my_clr mx-1" aria-hidden="true"></i><small>5%</small></p>
+				      	</div>
+					</div>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script>
+
+function openNav() {
+	
+	if(document.getElementById("mySidenav").style.width == "0px")
+	{
+  		document.getElementById("mySidenav").style.width = "250px"; 
+  		document.getElementById("main").style.marginLeft = "250px";
+  	}
+  	else
+  	{
+  		document.getElementById("mySidenav").style.width = "0px"; 
+  		document.getElementById("main").style.marginLeft = "0px";
+  		
+  	}
+
+}
+
+
+$(function() {
+
+    var start = moment().subtract(29, 'days');
+    var end = moment();
+
+    function cb(start, end) {
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+    }
+
+    $('#reportrange').daterangepicker({
+        startDate: start,
+        endDate: end,
+        ranges: {
+           'Today': [moment(), moment()],
+           'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+           'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+           'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+           'This Month': [moment().startOf('month'), moment().endOf('month')],
+           'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+    }, cb);
+
+    cb(start, end);
+
+});
+
+</script>
+
+	</body>
+
+</html>	
