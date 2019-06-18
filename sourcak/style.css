@@ -1,0 +1,15 @@
+.bg-cover{
+	background: url("img/background1.jpg") no-repeat fixed center;
+}
+
+body {
+  margin-top: 50px;
+}
+
+.navbar-nav > li > a {padding-top:5px; padding-bottom:10px;}
+.navbar {min-height:32px}
+
+.form-control{
+	border-radius:0px;
+	padding: .100rem .75rem;
+}

@@ -1,0 +1,55 @@
+.myinpt{
+  border: none;
+  border-bottom: 2px solid #8f94ec;
+  background-color:transparent;
+}
+
+
+.form1{
+  background-color:white;
+  border-radius:4px;
+}
+
+.heading_container{
+  margin-top: 7.5rem !important;
+}
+
+hr{
+	background-color:#8f94ec;
+	width:100%;
+}
+
+.top-header{
+	 background-image: linear-gradient(to right, rgba(33, 36, 56, 0), rgba(48, 58, 221, 0.6));
+}
+
+#submit_btn{
+  background-color:#8f94ec;
+  border:none;
+}
+
+
+.myinpt:focus{
+
+	border:none;
+}
+
+
+.whyus-container{
+ padding:5.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+ .whyus-container{
+ 	padding:0;
+ }
+}
+
+.check{
+	border:1px solid black;
+}
+
+.b-nav{
+  background-color:#8f94ec;
+  color:white;
+}
